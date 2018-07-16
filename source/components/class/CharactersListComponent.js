@@ -7,11 +7,10 @@ export default class CharactersListComponent extends React.Component {
 
   render() {
     return (
-      <FlatList style={CharactersListComponentStyle.list} 
-                data={this.props.characters} 
-                renderItem={ ({item}) => (
-        <CharactersItemComponent character={ item } touch={ this.props.touch } />
-      )} />
+      <FlatList style={ CharactersListComponentStyle.list } 
+                data={ this.props.characters }
+                renderItem={ ({ item }) => ( <CharactersItemComponent character={ item } touch={ this.props.touch } /> )}
+                keyExtractor={ item => item.name } />
     );
   }
 

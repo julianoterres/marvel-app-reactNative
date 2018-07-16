@@ -8,7 +8,6 @@ export default class CharactersItemComponent extends React.Component {
     const character = this.props.character;
     const thumbnail = character.thumbnail;
     const avatarUrl = `${thumbnail.path }/portrait_medium.${thumbnail.extension}`;
-
     return (
       <TouchableOpacity onPress={() => { this.props.touch({character}); }}>
         <View style={ CharactersItemComponentStyle.line }>

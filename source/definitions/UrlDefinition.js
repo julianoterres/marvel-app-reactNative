@@ -8,12 +8,16 @@ const apiTs = 'abcdefghijlmanopq';
 export default class UrlDefinition {
 
     static characters(offset, limit) {
-        parameters = `&offset=${offset}&limit=${limit}`;
-        return this.mountUrl('characters', parameters);
+      parameters = `&offset=${offset}&limit=${limit}`;
+      return this.mountUrl('characters', parameters);
     }
 
-    static mountUrl(method, parameters) {
-        return apiBaseURl + method + "?apikey=" + apiKey + "&hash=" + apiHash + "&ts=" + apiTs + parameters;
+    static comics(id) {
+      return this.mountUrl(`characters/${id}/comics`);
+    }
+
+    static mountUrl(method, parameters = '') {
+      return apiBaseURl + method + "?apikey=" + apiKey + "&hash=" + apiHash + "&ts=" + apiTs + parameters;
     }
 
 }
