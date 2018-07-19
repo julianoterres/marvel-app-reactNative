@@ -5,9 +5,6 @@ const CharactersListViewStyle = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     backgroundColor: '#303030'
-  },
-  loader: {
-    color: 'white'
   }
 });
 

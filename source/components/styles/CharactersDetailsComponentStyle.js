@@ -4,7 +4,7 @@ const CharactersDetailsComponentStyle = StyleSheet.create({
   avatarContainer: {
     height: 210,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   avatar: {
     width: '100%',
@@ -25,6 +25,14 @@ const CharactersDetailsComponentStyle = StyleSheet.create({
     fontWeight: 'normal',
     marginHorizontal: 20,
     marginBottom: 20
+  },
+  errorMessage: {
+    fontSize: 18,
+    color: 'white',
+    fontFamily: 'Barlow Condensed',
+    fontWeight: 'normal',
+    textAlign: 'center',
+    width: '100%'
   }
 });
 

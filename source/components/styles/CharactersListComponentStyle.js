@@ -4,6 +4,9 @@ const CharactersListComponentStyle = StyleSheet.create({
   list: {
     backgroundColor: '#303030',
     height: '100%'
+  },
+  loaderFlatList: {
+    marginVertical: 20
   }
 });
 

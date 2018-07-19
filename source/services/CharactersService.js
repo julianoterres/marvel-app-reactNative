@@ -3,11 +3,11 @@ import UrlDefinition from '../definitions/UrlDefinition';
 
 export default class CharactersService {
 
-  static list() {
+  static list(ofsset, limit) {
     var promise = new Promise(function(resolve, reject) {
-      axios.get(UrlDefinition.characters(0, 20)).then(response => {
+      axios.get(UrlDefinition.characters(ofsset, limit)).then(response => {
         if(response.data.code == 200){
-          resolve(response.data.data.results);
+          resolve(response.data.data);
         }else{
           reject("Error in API");
         }
