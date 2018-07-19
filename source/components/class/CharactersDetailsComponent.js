@@ -56,7 +56,7 @@ export default class CharactersDetailsComponent extends React.Component {
   renderLoader() {
     if(this.state.comicsShowLoader){
       return(
-        <ActivityIndicator animating={ true } size={ 'small' } color={ '#B50F16' } />
+        <ActivityIndicator animating={ true } size={ 'small' } color={ '#FFFFFF' } />
       );
     }
   }

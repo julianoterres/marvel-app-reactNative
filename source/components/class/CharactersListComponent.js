@@ -51,7 +51,7 @@ export default class CharactersListComponent extends React.Component {
   renderFooter() {
     if(!this.alreadyLoadAll()) {
       return (
-        <ActivityIndicator animating={ true } size={ 'small' } color={ '#B50F16' } style={ CharactersListComponentStyle.loaderFlatList } />
+        <ActivityIndicator animating={ true } size={ 'small' } color={ '#FFFFFF' } style={ CharactersListComponentStyle.loaderFlatList } />
       );
     }
   }
@@ -66,7 +66,7 @@ export default class CharactersListComponent extends React.Component {
   renderComponents() {
     if(this.state.showLoader){
       return (
-        <ActivityIndicator animating={ true } size={ 'large' } color={ '#B50F16' } />
+        <ActivityIndicator animating={ true } size={ 'large' } color={ '#FFFFFF' } />
       );
     }
 
