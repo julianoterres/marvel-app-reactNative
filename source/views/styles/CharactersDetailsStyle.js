@@ -16,15 +16,13 @@ const CharactersDetailsStyle = StyleSheet.create({
     borderRadius: 80
   },
   description: {
-    fontFamily: 'Barlow Condensed',
-    fontWeight: 'normal',
+    fontFamily: 'BarlowCondensed-Regular',
     fontSize: 18,
     color: 'white',
     marginHorizontal: 20
   },
   title: {
-    fontFamily: 'Barlow Condensed',
-    fontWeight: 'bold',
+    fontFamily: 'BarlowCondensed-Regular',
     fontSize: 24,
     color: 'white',
     marginHorizontal: 20,

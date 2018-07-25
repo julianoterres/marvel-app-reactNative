@@ -13,24 +13,21 @@ const CharactersDetailsComponentStyle = StyleSheet.create({
   description: {
     fontSize: 18,
     color: 'white',
-    fontFamily: 'Barlow Condensed',
-    fontWeight: 'normal',
+    fontFamily: 'BarlowCondensed-Regular',
     marginHorizontal: 20,
     marginVertical: 20
   },
   title: {
     fontSize: 24,
     color: 'white',
-    fontFamily: 'Barlow Condensed',
-    fontWeight: 'normal',
+    fontFamily: 'BarlowCondensed-Bold',
     marginHorizontal: 20,
     marginBottom: 20
   },
   errorMessage: {
     fontSize: 18,
     color: 'white',
-    fontFamily: 'Barlow Condensed',
-    fontWeight: 'normal',
+    fontFamily: 'BarlowCondensed-Regular',
     textAlign: 'center',
     width: '100%'
   }

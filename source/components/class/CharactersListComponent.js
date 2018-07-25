@@ -3,6 +3,7 @@ import { ActivityIndicator, Alert, FlatList, View } from 'react-native';
 import CharactersItemComponent from './CharactersItemComponent'
 import CharactersListComponentStyle from '../styles/CharactersListComponentStyle'
 import CharactersService from '../../services/CharactersService'
+import SplashScreen from 'react-native-splash-screen';
 
 export default class CharactersListComponent extends React.Component {
 
@@ -36,7 +37,8 @@ export default class CharactersListComponent extends React.Component {
           total: data.total,
           loadingCharacterActive: false
         });
-      }      
+      }
+      SplashScreen.hide()
     });
   }
 
@@ -51,7 +53,7 @@ export default class CharactersListComponent extends React.Component {
   renderFooter() {
     if(!this.alreadyLoadAll()) {
       return (
-        <ActivityIndicator animating={ true } size={ 'small' } color={ '#B50F16' } style={ CharactersListComponentStyle.loaderFlatList } />
+        <ActivityIndicator animating={ true } size={ 'small' } color={ '#FFFFFF' } style={ CharactersListComponentStyle.loaderFlatList } />
       );
     }
   }
@@ -66,7 +68,7 @@ export default class CharactersListComponent extends React.Component {
   renderComponents() {
     if(this.state.showLoader){
       return (
-        <ActivityIndicator animating={ true } size={ 'large' } color={ '#B50F16' } />
+        <ActivityIndicator animating={ true } size={ 'large' } color={ '#FFFFFF' } />
       );
     }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import CharactersListComponent from '../../components/class/CharactersListComponent';
 import StatusBarComponent from '../../components/class/StatusBarComponent';
-import CharactersListViewStyle from '../styles/CharactersListViewStyle'
+import CharactersListViewStyle from '../styles/CharactersListViewStyle';
 
 export default class CharactersListView extends React.Component {
 
