@@ -24,14 +24,15 @@ export default createStackNavigator(
       headerTintColor: 'white',
       headerBackTitle: null,
       headerStyle: {
-        backgroundColor: '#B50F16'
+        backgroundColor: '#B50F16',
+        elevation: 0,
+        borderBottomWidth: 0
       },
       headerTitleStyle: {
         color: 'white',
         fontSize: 20,
         alignSelf: 'center',
-        fontFamily: 'Barlow Condensed',
-        fontWeight: 'bold'
+        fontFamily: 'BarlowCondensed-Bold'
       }
     }
   }

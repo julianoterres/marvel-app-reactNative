@@ -19,8 +19,7 @@ const ComicsListItemComponentStyle = StyleSheet.create({
     textAlign: 'left',
     fontSize: 18,
     color: 'white',
-    fontFamily: 'Barlow Condensed',
-    fontWeight: 'normal'
+    fontFamily: 'BarlowCondensed-Regular'
   }
 });
 

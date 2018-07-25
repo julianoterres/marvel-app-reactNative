@@ -15,8 +15,7 @@ const CharactersItemComponentStyle = StyleSheet.create({
     paddingLeft: 15,
     flex: 7,
     color: 'white',
-    fontFamily: 'Barlow Condensed',
-    fontWeight: 'normal'
+    fontFamily: 'BarlowCondensed-Regular',
   },
   avatar: {
     aspectRatio: 1,
